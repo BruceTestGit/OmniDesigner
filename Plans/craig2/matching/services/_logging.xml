@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<loggingConfig>
+	<appenders>
+        <iLogAppenderFactory encoding="UTF-8" fileName="../../../../../OmniGenData/logs/dq/matching_online.log" class="com.ataccama.dqc.commons.logging.factories.FileLogAppenderFactory" mode="append" name="fileOnline"/>
+		<iLogAppenderFactory encoding="UTF-8" fileName="../../../../../OmniGenData/logs/dq/matching_err.log" class="com.ataccama.dqc.commons.logging.factories.FileLogAppenderFactory" mode="append" name="fileError"/>
+		<iLogAppenderFactory encoding="UTF-8" fileName="../../../../../OmniGenData/logs/dq/matching_perf.log" class="com.ataccama.dqc.commons.logging.factories.FileLogAppenderFactory" mode="append" name="filePerf"/>
+        <iLogAppenderFactory useStdErr="false" class="com.ataccama.dqc.commons.logging.factories.StdOutLogAppenderFactory" name="stdout"/>
+	</appenders>
+	<loggingRules>
+		<!-- <loggingRule level="DEBUG" appender="stdout">
+			<trace/>
+		</loggingRule> -->
+		<loggingRule level="WARNING" appender="filePerf">
+			<trace>
+				<string>HttpDispatcher</string>
+				<!-- List of all available components
+				LoggingComponent
+				HttpDispatcher
+				LoggingComponent
+				AuthenticationService
+				HealthStateProviders
+				WebConsoleComponent
+				HealthStateWebConsole
+				ManagementService
+				OnlineServicesComponent
+				SoapReceiver -->
+			</trace>
+		</loggingRule>
+		<loggingRule level="WARNING" appender="stdout">
+			<trace/>
+		</loggingRule>
+		<loggingRule level="WARNING" appender="fileError">
+			<trace/>
+		</loggingRule>
+		<loggingRule level="WARNING" appender="fileOnline">
+			<trace/>
+		</loggingRule>
+	</loggingRules>
+</loggingConfig>
