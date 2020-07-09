@@ -1,5 +1,5 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<purity-config xmlns:comm="http://www.ataccama.com/purity/comment" version="10.6.2.ga-2017-03-03">
+<?xml version='1.0' encoding='utf-8'?>
+<purity-config xmlns:comm="http://www.ataccama.com/purity/comment" version="12.3.0.ga-2019-02-03">
 	<references/>
 	<component-mappings>
 		<propertyMappings/>
