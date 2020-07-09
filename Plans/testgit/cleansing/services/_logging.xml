@@ -26,7 +26,7 @@
 				SoapReceiver -->
 			</trace>
 		</loggingRule>
-		<loggingRule level="WARNING" appender="stdout">
+		<loggingRule level="Debug" appender="stdout">
 			<trace/>
 		</loggingRule>
 		<loggingRule level="WARNING" appender="fileError">

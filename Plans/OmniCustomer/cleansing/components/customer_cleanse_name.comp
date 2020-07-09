@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <purity-config xmlns:comm="http://www.ataccama.com/purity/comment" version="12.3.0.ga-2019-02-03">
 	<references/>
 	<component-mappings>
@@ -298,7 +298,7 @@ iif(pur_display_name is null and
 			</columns>
 			<shadowColumns/>
 		</properties>
-		<visual-constraints layout="vertical" bounds="48,48,-1,-1"/>
+		<visual-constraints layout="vertical" bounds="96,48,-1,-1"/>
 	</step>
 	<connection className="com.ataccama.dqc.model.elements.connections.StandardFlowConnection" disabled="false">
 		<source endpoint="out" step="in"/>
